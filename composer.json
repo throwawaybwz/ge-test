@@ -1,0 +1,11 @@
+{
+  "require" : {
+    "facebook/php-sdk-v4" : "~5.0"
+  },
+  "autoload": {
+  	"psr-4": {
+  		"KD2\\": "lib/KD2/",
+  		"Gladtest\\": "lib/Gladtest/"
+  	}
+  }
+}
