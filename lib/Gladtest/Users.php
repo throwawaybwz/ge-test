@@ -300,7 +300,8 @@ class Users
 	 */
 	public function all()
 	{
-		$query = $this->db->prepare('SELECT * FROM users ORDER BY name ASC;');
+		$query = $this->db->prepare('SELECT id, name, group_id, email, active, created, updated, facebook_id, twitter_id
+			FROM users ORDER BY name ASC;');
 		$query->execute();
 		return $query->fetchAll(\PDO::FETCH_OBJ);
 	}
